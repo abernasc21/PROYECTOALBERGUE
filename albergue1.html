@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="img/logo.jpg">
+    <title>Albergue de perros </title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.jpg" align="left">
+        <nav>
+            <div class="btn" onclick="accion()" align="right">
+                <span></span> <span></span> <span></span>
+            </div>
+            <ul>
+                <a class="enlaces" href="#Nosotros"> Nosotros</a>
+                <a class="enlaces" href="#Imagenes"> Imagenes</a>
+                <a class="enlaces" href="#Adopcion"> Adopción</a>
+                <a class="enlaces" href="#Donar">    Donar</a>
+                <a class="enlaces" href="#Unetenos"> Unetenos</a>
+            </ul>
+        </nav>
+    </header>
+    <section id="Nosotros">
+        <h1>¿Quienes somos?</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Labore culpa soluta eligendi assumenda quibu
+            sdam illo expedita aliquid possimus voluptatem sit
+            , dolor qui saepe voluptate modi dolorem maxime co
+            mmodi accusantium. Distinctio.
+            Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Labore culpa soluta eligendi assumenda quibu
+            sdam illo expedita aliquid possimus voluptatem sit
+            , dolor qui saepe voluptate modi dolorem maxime co
+            mmodi accusantium. Distinctio. 
+            Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Labore culpa soluta eligendi assumenda quibu
+            sdam illo expedita aliquid possimus voluptatem sit
+            , dolor qui saepe voluptate modi dolorem maxime co
+            mmodi accusantium. Distinctio. 
+            Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Labore culpa soluta eligendi assumenda quibu
+            sdam illo expedita aliquid possimus voluptatem sit
+            , dolor qui saepe voluptate modi dolorem maxime co
+            mmodi accusantium. Distinctio. 
+            Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Labore culpa soluta eligendi assumenda quibu
+            sdam illo expedita aliquid possimus voluptatem sit
+            , dolor qui saepe voluptate modi dolorem maxime co
+            mmodi accusantium. Distinctio. 
+        </p>
+    </section>
+    <section id="Imagenes">
+        <h1>Nuestros Peludos</h1>
+        <div class="grid-container">
+            <div class="grid-item"> <img src="img/perro1.jpg"> </div>
+            <div class="grid-item"> <img src="img/perro2.jpg"> </div>
+            <div class="grid-item"> <img src="img/perro3.jpg"> </div>
+            <div class="grid-item"> <img src="img/perro4.jpg"> </div>
+            <div class="grid-item"> <img src="img/perro5.jpg"> </div>
+            <div class="grid-item"> <img src="img/perro6.jpg"> </div>
+        </div>
+    </section>
+    <section id="Adopcion">
+        <h1>¡Adoptemos a alguno!</h1>
+        <table>
+            <tr>
+                <th style="width: 50%;">
+                    <img src="img/perro7.jpg">
+                </th>
+                <td style="width: 50%;">
+                    <h2>Name del perro 1</h2> <br>
+                    <p>
+                        Lorem ipsum dolor
+                        sit amet consectetur
+                        , adipisicing elit.
+                        Qui culpa, aliquam m
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <img src="img/perro7.jpg">
+                </th>
+                <td>
+                    <h2>Name del perro 2</h2> <br>
+                    <p>
+                        Lorem ipsum dolor
+                        sit amet consectetur
+                        , adipisicing elit.
+                        Qui culpa, aliquam m
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="Donar">
+        <h1>Donaciones <3 </h1>
+                <form>
+                    Información Personal <br>
+                    <input type="text" name="nombre" placeholder="Nombres"><br>
+                    <input type="text" name="apellidos" placeholder="Apellidos"><br>
+                    <input type="email" name="mail" placeholder="E-mail @"><br>
+                    Tarjeta de credito <br>
+                    <input type="text" name="titular" placeholder="Nombre del titular"><br>
+                    <input type="number" name="ntarjeta" placeholder="Numero de tajeta"><br>
+                    <input type="text" name="cvc" placeholder="CVC">
+                    <br>
+                    <input type="radio" name="100bs"> 100bs
+                    <input type="radio" name="300bs"> 300bs
+                    <input type="radio" name="500bs"> 500bs
+                    <br>
+                    <input type="radio" name="1000bs"> 1000bs
+                    <input type="radio" name="5000bs"> 5000bs
+                    <input type="radio" name="7000bs"> 7000bs
+                    <br>
+                    <input type="number" name="propuesta" placeholder="¿Cuanto quieres donar?">bs
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </form>
+    </section>
+    <section id="Unetenos">
+        <h1>¡Unetenos!</h1>
+        <form>
+            <input type="text" name="nombreR" placeholder="Ingrese su nombre"><br>
+            <input type="text" name="apellidosR" placeholder="Inrese sus apellidos"><br>
+            <input type="email" name="emailR" placeholder="E-mail"><br>
+            <input type="password" name="contraseña" placeholder="Contraseña"><br>
+            <input type="submit" value="Registrarse">
+        </form>
+    </section>
+    <footer align="center">
+        DERECHOS RESERVADOS <br>
+        ALEJANDRO RAMIRO BERNAS CARRISALES
+    </footer>
+    <script>
+        function accion() {
+            var ancla = document.getElementsByClassName('enlaces');
+            for (var i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle('mostrar');
+            }
+        }
+    </script>
+</body>
+</html>
