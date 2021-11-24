@@ -1,6 +1,5 @@
 *{
     font-family: 'Indie Flower', cursive;
-    
 }
 body{
     background-color:darkkhaki;
@@ -117,11 +116,67 @@ th img{
 
 }
 
+/* !tienda */
+.quiosco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-style: 2px solid blue;
+}
+.producto:hover{
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.8);
+}
+.producto{
+    padding: 16px;
+
+}
+.producto img{
+    width: 300px;
+}
+.producto button:hover{
+    background-color: greenyellow;
+}
+.agregarP{
+    border: none;
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+.pagar-btn{
+    
+    padding: 30px;font-size: 20px;
+}
+
+
+/* !---------------------------------- */
+
+/* !pop up */
+.popup{
+    
+    position: sticky;
+    top: 20%;
+    background-color: yellow;
+    color: black;
+    display:  none ;
+    text-align: center;
+}
+#cerrarPOP img{
+    width: 100px;
+}
+#cerrarPOP{
+    position: absolute;
+    right: 3px;
+    top: 0;
+
+}
+
+/* !---------------------------------- */
 
 
 
-
-@media only screen and (max-width: 785px){
+@media only screen and (max-width: 866px){
     /* !boton y menú */ 
     header{
         height: 100px;
