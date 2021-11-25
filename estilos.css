@@ -48,9 +48,7 @@ nav a:hover{
     transition: 500ms;
     color: white;
 }
-
 /* !------------ */
-
 /* *Formulario */
 form{
     text-align: center;
@@ -62,7 +60,6 @@ input:focus{
 }
 input[type=text]{
     font-size: 20px;
-    
 }
 input[type=number]{
     font-size: 20px;
@@ -95,7 +92,6 @@ td{
 th img{
     width: 100%;
 }
-
 .grid-container {
     display: grid;
     grid-template-columns: auto;
@@ -115,7 +111,6 @@ th img{
     width: 400px;
 
 }
-
 /* !tienda */
 .quiosco{
     display: flex;
@@ -148,10 +143,7 @@ th img{
     
     padding: 30px;font-size: 20px;
 }
-
-
 /* !---------------------------------- */
-
 /* !pop up */
 .popup{
     
@@ -169,13 +161,8 @@ th img{
     position: absolute;
     right: 3px;
     top: 0;
-
 }
-
 /* !---------------------------------- */
-
-
-
 @media only screen and (max-width: 866px){
     /* !boton y menú */ 
     header{
@@ -189,7 +176,6 @@ th img{
         
         background-color: goldenrod;
     }
-    
     .btn span{
         display:block;
         margin: 5px;
@@ -197,8 +183,7 @@ th img{
         height: 7px;
         background: black;
     }
-
-    /* !-------- */
+/* !-------- */
     h1{
         padding: 10px;
         font-size: 30px;
@@ -219,5 +204,3 @@ th img{
         width: 200px;
     }
 }
-
-
